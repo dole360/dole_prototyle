@@ -159,6 +159,10 @@ html {
   inset: 0;
   width: 100%;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   opacity: 0;
   visibility: hidden;
   transition:
@@ -171,13 +175,35 @@ html {
   visibility: visible;
 }
 
+.news-slide-bg {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: blur(26px) saturate(0.9);
+  transform: scale(1.12);
+  opacity: 0.95;
+}
+
+.news-slide::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(255,255,255,0.26) 0%, rgba(255,255,255,0.08) 16%, rgba(255,255,255,0.08) 84%, rgba(255,255,255,0.26) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .news-slide img {
+  position: relative;
+  z-index: 2;
   display: block;
   width: 100%;
   height: 100%;
- object-fit: contain;
-background: #ffffff;
+  object-fit: contain;
   object-position: center;
+  background: transparent;
 }
 
 .news-arrow{
@@ -5425,4 +5451,67 @@ body:not(.admin-edit-mode) .boss-carousel .boss-box-toolbar { display:none; }
     font-size:17px;
     letter-spacing:.03em;
   }
+}
+
+
+/* Fix: member registration preview remains inside the student modal.
+   Scoped to #studentModal to preserve every other modal. */
+#studentModal .learning-modal-box {
+  box-sizing: border-box;
+  max-height: calc(100dvh - 32px);
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain;
+}
+#studentModal #registerBox {
+  min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+#studentModal #stuPhotoPreviewWrap:not([hidden]) {
+  position: static !important;
+  display: flex !important;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 12px;
+  clear: both;
+  width: 100%;
+  max-width: 100%;
+  height: auto !important;
+  min-height: 0;
+  margin: 8px 0 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+#studentModal #stuPhotoPreviewWrap[hidden] { display: none !important; }
+#studentModal #stuPhotoPreview {
+  position: static !important;
+  display: block;
+  flex: 0 0 78px;
+  width: 78px !important;
+  height: 78px !important;
+  max-width: 78px !important;
+  max-height: 78px !important;
+  object-fit: cover;
+}
+#studentModal #stuPhotoPreviewWrap .learning-photo-remove {
+  position: static !important;
+  flex: 0 0 auto;
+  max-width: 100%;
+}
+#studentModal #registerBox .learning-register-actions {
+  position: static !important;
+  display: flex;
+  clear: both;
+  width: 100%;
+  justify-content: center;
+  margin: 16px 0 4px;
+  box-sizing: border-box;
+}
+#studentModal #registerBox .learning-register-actions button {
+  position: static !important;
+  flex: 0 1 auto;
+}
+@media (max-width: 650px) {
+  #studentModal .learning-modal-box { max-height: calc(100dvh - 20px); }
 }
