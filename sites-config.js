@@ -162,7 +162,7 @@
       SITE_TYPE: 'TAMBOL',
       SEO_TITLE: "ศกร.xxxxx",
       SEO_DESCRIPTION: "เว็บไซต์ศูนย์การเรียนรู้ระดับตำบล เรียนรู้ทุกที่ ทุกเวลา ทุกช่วงวัย",
-      MAIN_EXEC_URL: "https://script.google.com/macros/s/AKfycbwUis7CPKvhkirUIql_jZSSJoDLRi8p5gMLeOWCJWNmPFId582cXSEj61f9iAINsGDrqw/exec",
+      MAIN_EXEC_URL: "https://script.google.com/macros/s/AKfycbwavmmMAssNJFeGZaIo2jpRi9DOoIPxQ2UZCeFwY7AoH47AU3ExlfGcfL081bfAHXtSqQ/exec",
       STUDENT_PROFILE_EXEC_URL: "https://script.google.com/macros/s/AKfycbycPtxfGw5DVm5Q6zh6SnV8Nh00y4H4ZB2n6dFDJ-ZM44PfWilSaWQjLzNpKgEJD6Riww/exec",
       CACHE_PREFIX: "LP360:TAMBOL:THALECHUPSORN:"
     }),
