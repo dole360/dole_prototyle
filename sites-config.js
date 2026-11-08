@@ -160,10 +160,10 @@
     }),
     "thalechupsorn": Object.freeze({
       SITE_TYPE: 'TAMBOL',
-      SEO_TITLE: "ศกร.ระดับตำบลทะเลชุบศร",
+      SEO_TITLE: "ศกร.xxxxx",
       SEO_DESCRIPTION: "เว็บไซต์ศูนย์การเรียนรู้ระดับตำบล เรียนรู้ทุกที่ ทุกเวลา ทุกช่วงวัย",
-      MAIN_EXEC_URL: "https://script.google.com/macros/s/AKfycby9AOhUnKjAbgfGfQzm5T_p7tyd2Lq3ubj8lp3zUUGdRPkmw9QpJOmiftj9RvKajyfRBA/exec",
-      STUDENT_PROFILE_EXEC_URL: "https://script.google.com/macros/s/AKfycbyKHDdsyMFt5PpxKLF7nIeffzUiEKK6Na5-onqsE1pJZMUEJOiS74cij6EZQEa5IdqB/exec",
+      MAIN_EXEC_URL: "https://script.google.com/macros/s/AKfycbwUis7CPKvhkirUIql_jZSSJoDLRi8p5gMLeOWCJWNmPFId582cXSEj61f9iAINsGDrqw/exec",
+      STUDENT_PROFILE_EXEC_URL: "https://script.google.com/macros/s/AKfycbycPtxfGw5DVm5Q6zh6SnV8Nh00y4H4ZB2n6dFDJ-ZM44PfWilSaWQjLzNpKgEJD6Riww/exec",
       CACHE_PREFIX: "LP360:TAMBOL:THALECHUPSORN:"
     }),
     "khoktum": Object.freeze({
